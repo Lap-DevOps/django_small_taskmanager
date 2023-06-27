@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<h1>Tasks:</h1>
+
+<br>
+
+<h1>Create new task:</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <br>
+    {{ form.title}}
+    <br>
+    {{form.task}}
+    <br>
+    <button type='submit' class='btn btn-success'>Create</button>
+    <span>{{error}}</span>
+</form>
+
+
+{% endblock %}
