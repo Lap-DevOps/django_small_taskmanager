@@ -29,7 +29,7 @@
             <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
                 <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'home' %}">Main page</a>
                 <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'about' %}">About us</a>
-
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'create' %}">Create task</a>
             </nav>
         </div>
     </header>
@@ -39,7 +39,14 @@
 <div  class="container-xl">
     {% block content %}{% endblock %}
 </div>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">© 2023 My Website. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
